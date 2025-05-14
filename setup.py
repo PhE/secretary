@@ -25,33 +25,29 @@ class PyTest(TestCommand):
         sys.exit(errno)
 
 setup(
-    name='secretary',
-    version='0.2.19',
-    url='https://github.com/christopher-ramirez/secretary',
-    license='MIT',
-    author='Christopher Ramírez',
-    author_email='chris.ramirezg@gmail.com',
-    description='Take the power of Jinja2 templates to OpenOffice or LibreOffice.',
+    name="secretary",
+    version="0.2.20",
+    url="https://github.com/christopher-ramirez/secretary",
+    license="MIT",
+    author="Christopher Ramírez",
+    author_email="chris.ramirezg@gmail.com",
+    description="Take the power of Jinja2 templates to OpenOffice or LibreOffice.",
     long_description=long_description,
-    py_modules=['secretary', 'markdown_map'],
-    platforms='any',
-    install_requires=[
-        'Jinja2>=3', 'markdown2', 'MarkupSafe'
-    ],
-    tests_require=['pytest'],
-    cmdclass={'test': PyTest},
-    test_suite='test_secretary',
+    py_modules=["secretary", "markdown_map"],
+    platforms="any",
+    install_requires=["Jinja2>=3", "markdown2", "MarkupSafe"],
+    tests_require=["pytest"],
+    cmdclass={"test": PyTest},
+    test_suite="test_secretary",
     classifiers=[
-        'Environment :: Web Environment',
-        'Intended Audience :: End Users/Desktop',
-        'Operating System :: OS Independent',
-        'Programming Language :: Python',
-        'Development Status :: 3 - Alpha',
-        'Topic :: Software Development :: Libraries :: Python Modules',
-        'Topic :: Office/Business',
-        'Topic :: Utilities',
+        "Environment :: Web Environment",
+        "Intended Audience :: End Users/Desktop",
+        "Operating System :: OS Independent",
+        "Programming Language :: Python",
+        "Development Status :: 3 - Alpha",
+        "Topic :: Software Development :: Libraries :: Python Modules",
+        "Topic :: Office/Business",
+        "Topic :: Utilities",
     ],
-    extras_require={
-        'testing': ['pytest']
-    }
+    extras_require={"testing": ["pytest"]},
 )
